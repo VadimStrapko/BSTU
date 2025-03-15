@@ -1,0 +1,45 @@
+form label {
+    display: inline-block;
+    width: 40%;
+}
+
+form input {
+    width: 30%;
+}
+.result {
+    color: red;
+    
+}
+.game {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0;
+}
+.thimble {
+    z-index: 1;
+    background: center url("image.JPG") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+    transition: transform 0.1s;
+}
+.ball {
+    z-index: 0;
+    display: inline-block;
+    background: green;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+#refresh {
+    font-size: 1.6em;
+    margin: 2% 46%;
+}

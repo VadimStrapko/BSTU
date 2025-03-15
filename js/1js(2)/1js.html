@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        .divForm {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .error-message {
+            color: red;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        label {
+            flex-basis: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+<script src="1js.js"></script>
+    <h2>Заполните форму</h2>
+    <div class="divForm">
+        <form name="myForm" onsubmit="return validateForm()" class="for">
+            <div class="form-group">
+                <label>Фамилия:</label> <input type="text" name="surname">
+            </div>
+            <div id="surname-error" class="error-message"></div>
+            <div class="form-group">
+                <label>Имя:</label> <input type="text" name="name">
+                
+            </div>
+            <div id="name-error" class="error-message"></div>
+            <div class="form-group">
+                <label>E-mail:</label> <input type="text" name="email">
+                
+            </div>
+            <div id="email-error" class="error-message"></div>
+            <div class="form-group">
+                <label>Телефон:</label> <input type="text" name="phone">
+               
+            </div>
+            <div id="phone-error" class="error-message"></div>
+            <div class="form-group">
+                <label>Город:</label>
+                <select name="city">
+                    <option>Брест</option>
+                    <option>Сморгонь</option>
+                    <option>Минск</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Я учусь в БГТУ</label> <input type="checkbox" name="bgtu">
+            </div>
+            <div class="form-group">
+                <label>На каком вы курсе? </label>
+                <input type="radio" name="course">1
+                <input type="radio" name="course">2
+                <input type="radio" name="course">3
+                <input type="radio" name="course">4
+            </div>
+            <div class="form-group">
+
+                <label>Расскажите о себе:</label> <textarea name="about"></textarea>
+                
+            </div>
+            <div id="about-error" class="error-message"></div>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

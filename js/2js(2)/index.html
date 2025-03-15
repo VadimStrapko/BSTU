@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>2js</title>
+    <link rel="stylesheet" media="all" href="styles.css">
+</head>
+<body>
+    <form>
+        <p>
+            <label for="height">Высота наперстка</label>
+            <input type="text" id="height">
+        </p>
+        <p>
+            <label for="width">Ширина наперстка</label>
+            <input type="text" id="width">
+        </p>
+        <p>
+            <label for="diameter">Диаметр шарика</label>
+            <input type="text" id="diameter">
+        </p>
+        <p>
+            <input type="button" value="Сохранить" id="save">
+        </p>
+    </form>
+    <p class="res">
+        Результат = <span class="resValue">0</span>
+    </p>
+    <p class="result">Нажмите на напёрсток</p>
+    <p class="sq">Площадь</p>
+    <div class="game">
+        <div class="thimble" value="1"></div>
+        <div class="thimble" value="2"></div>
+        <div class="thimble" value="3"></div>
+        <div class="ball"></div>
+    </div>
+    <input type="button" value="Обновить" id="refresh">
+    <input type="button" value="площадь" id="squre">
+    <script src="thimble.js"></script>
+</body>
+</html>
